@@ -30,9 +30,7 @@ function an2abt(){
     $("#project-info").fadeOut(def_time);
     $("#contact-info").animate({top: "94%"}, def_time)
     function fadein_abt(){
-        document.getElementById("about-info").style.right = '5%';
-        document.getElementById("title").style.left = '10%';
-        $("#title").fadeIn(def_time);
+        document.getElementById("about-info").style.left = '5%';
         $("#about-info").slideDown(def_time);
     }
     setTimeout(fadein_abt, 500);
@@ -40,7 +38,7 @@ function an2abt(){
 
 function an2project(){
     leftOut("title");
-    rightOut("about-info");
+    $("#about-info").fadeOut(def_time);
     $("#contact-info").animate({top: "94%"}, def_time)
     function fadein(){
         $("#project-info").fadeIn(def_time);
@@ -49,7 +47,7 @@ function an2project(){
 }
 
 function an2home(){
-    rightOut("about-info");
+    $("#about-info").fadeOut(def_time);
     $("#project-info").fadeOut(def_time);
     $("#contact-info").animate({top: "94%"}, def_time)
     function fadein(){
@@ -62,7 +60,7 @@ function an2home(){
 function an2contact(){
     $("#project-info").fadeOut(def_time);
     leftOut("title");
-    rightOut("about-info");
+    $("#about-info").fadeOut(def_time);
     function fadein(){
         document.getElementById("contact-info").style.display = "block";
         document.getElementById("contact-info").style.top = '94%';
