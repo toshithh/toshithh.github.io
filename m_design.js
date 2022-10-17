@@ -1,4 +1,4 @@
-var def_time = 1300;
+var def_time = 1200;
 function replaceClass(id, oldClass, newClass) {
     var elem = $(`#${id}`);
     if (elem.hasClass(oldClass)) {
@@ -26,7 +26,6 @@ function leftOut(id){
 }
 
 function an2abt(){
-    document.getElementById("about-info").style.left = "5%";
     leftOut("title");
     $("#project-info").fadeOut(def_time);
     $("#contact-info").animate({top: "94%"}, def_time)
