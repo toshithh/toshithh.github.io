@@ -13,10 +13,9 @@ body{
     border: none;
     outline: none;
     margin: none;
-    min-width: 100%;
-    height: auto;
-    overflow: hidden;
-    vertical-align: middle;
+    width: 100%;
+    height: 100;
+    object-fit: cover;
     z-index:0;
     opacity: 0.3;
     transform: rotate(90deg);
