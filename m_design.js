@@ -1,4 +1,4 @@
-var def_time = 1200;
+var def_time = 1300;
 function replaceClass(id, oldClass, newClass) {
     var elem = $(`#${id}`);
     if (elem.hasClass(oldClass)) {
@@ -41,7 +41,6 @@ function an2abt(){
 
 function an2project(){
     leftOut("title");
-    rightOut("social");
     rightOut("about-info");
     $("#contact-info").animate({top: "94%"}, def_time)
     function fadein(){
@@ -64,7 +63,6 @@ function an2home(){
 function an2contact(){
     $("#project-info").fadeOut(def_time);
     leftOut("title");
-    rightOut("social");
     rightOut("about-info");
     function fadein(){
         document.getElementById("contact-info").style.display = "block";
