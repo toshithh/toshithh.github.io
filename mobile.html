@@ -5,6 +5,17 @@
     <link rel="stylesheet" href="mobile.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="m_design.js"></script>
+    <script>
+        function winDirector(){
+            x = screen.width;
+            y = screen.height;
+            if(y < x){
+                window.location.href="index.html";
+            }
+        }
+        winDirector();
+        setInterval(winDirector, 100);
+    </script>
     <title>Portfolio</title>
 </head>
 <body>
