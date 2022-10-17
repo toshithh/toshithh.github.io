@@ -1,4 +1,4 @@
-var def_time = 1300;
+var def_time = 1200;
 function replaceClass(id, oldClass, newClass) {
     var elem = $(`#${id}`);
     if (elem.hasClass(oldClass)) {
