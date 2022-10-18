@@ -105,4 +105,20 @@ $(document).ready(function(){
         replaceClass("contact", "top-button", "current");
         an2contact();
     })
+    //
+    $("#webdev").click(function(){
+        $("#webdiv").slideToggle(800);
+    })
+    $("#OS").click(function(){
+        $("#OS-div").slideToggle(800);
+    })
+    $("#ML").click(function(){
+        $("#ML-div").slideToggle(800);
+    })
+    $("#DS").click(function(){
+        $("#DS-div").slideToggle(800);
+    })
+    $("#others").click(function(){
+        $("#others-div").slideToggle(800);
+    })
 })

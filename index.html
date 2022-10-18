@@ -6,15 +6,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="design.js"></script>
     <script>
+        var i = 0;
         function winDirector(){
             x = screen.width;
             y = screen.height;
             if(x < y){
                 window.location.href="mobile.html";
+                i++;
             }
         }
         winDirector();
-        setInterval(winDirector, 100);
+        if(i==0){
+            setInterval(winDirector, 100);
+        }
     </script>
     <title>Toshith-Portfolio</title>
 </head>
@@ -34,6 +38,8 @@
         <b>Toshith</b> is an AI and Datascience student, a full stack developer and a robotics enthusiast.Computers and coding are his passion
          and he can work with over 13 languages to solve real world problems.
     </div>
+
+
     <div id="about-info">
         <h2><u>About-Me</u></h2>
         I am a Data Science student and a full stack developer. I like to work on projects and code. Sometimes I even build drones.<br>
@@ -44,71 +50,112 @@
         You can find some of my sample projects in the projects section.<br><br>
         Apart from programming and "the nerd stuff" I like to travel, hike, listen to music and drive fast cars.<br><br>
         <h2><u>My Skills</u></h2>
-        <div class="skill">
-            <h2 class="skill-text">Python</h2>
-            <div class="empty-bar"><div class="fullbar" style="width: 100%;background-color: rgb(0, 255, 0);"></div></div>
-            <h2 style="margin-top: 2%;"><i>100%</i></h2>
-        </div><br>
-        <div class="skill">
-            <h2 class="skill-text">PHP</h2>
-            <div class="empty-bar"><div class="fullbar" style="width: 80%;background-color: rgb(0, 255, 0);"></div></div>
-            <h2 style="margin-top: 2%;"><i>80%</i></h2>
-        </div><br>
-        <div class="skill">
-            <h2 class="skill-text">BASH</h2>
-            <div class="empty-bar"><div class="fullbar" style="width: 60%;background-color: rgb(255, 255, 0);"></div></div>
-            <h2 style="margin-top: 2%;"><i>60%</i></h2>
-        </div><br>
-        <div class="skill">
-            <h2 class="skill-text">HTML</h2>
-            <div class="empty-bar"><div class="fullbar" style="width: 80%;background-color: rgb(0, 255, 0);"></div></div>
-            <h2 style="margin-top: 2%;"><i>80%</i></h2>
-        </div><br>
-        <div class="skill">
-            <h2 class="skill-text">CSS</h2>
-            <div class="empty-bar"><div class="fullbar" style="width: 80%;background-color: rgb(0, 255, 0);"></div></div>
-            <h2 style="margin-top: 2%;"><i>80%</i></h2>
+        <ul>
+            <li id="webdev">WebDev</li>
+            <div id="webdiv" style="display: none;">
+                <div class="skill">
+                    <h2 class="skill-text">Python-Django</h2>
+                    <div class="empty-bar"><div class="fullbar" style="width: 100%;background-color: rgb(0, 255, 0);"></div></div>
+                    <h2 style="margin-top: 2%;"><i>100%</i></h2>
+                </div><br>
+                <div class="skill">
+                    <h2 class="skill-text">PHP</h2>
+                    <div class="empty-bar"><div class="fullbar" style="width: 80%;background-color: rgb(0, 255, 0);"></div></div>
+                    <h2 style="margin-top: 2%;"><i>80%</i></h2>
+                </div><br>
+                <div class="skill">
+                    <h2 class="skill-text">HTML</h2>
+                    <div class="empty-bar"><div class="fullbar" style="width: 80%;background-color: rgb(0, 255, 0);"></div></div>
+                    <h2 style="margin-top: 2%;"><i>80%</i></h2>
+                </div><br>
+                <div class="skill">
+                    <h2 class="skill-text">CSS</h2>
+                    <div class="empty-bar"><div class="fullbar" style="width: 80%;background-color: rgb(0, 255, 0);"></div></div>
+                    <h2 style="margin-top: 2%;"><i>80%</i></h2>
+                </div>
+                <br>
+                <div class="skill">
+                    <h2 class="skill-text">JavaScript</h2>
+                    <div class="empty-bar"><div class="fullbar" style="width: 80%;background-color: rgb(0, 255, 0);"></div></div>
+                    <h2 style="margin-top: 2%;"><i>80%</i></h2>
+                </div>
+                <br>
+                <div class="skill">
+                    <h2 class="skill-text">Jquery</h2>
+                    <div class="empty-bar"><div class="fullbar" style="width: 80%;background-color: rgb(0, 255, 0);"></div></div>
+                    <h2 style="margin-top: 2%;"><i>80%</i></h2>
+                </div><br>
+                <div class="skill">
+                    <h2 class="skill-text">AJAX</h2>
+                    <div class="empty-bar"><div class="fullbar" style="width: 70%;background-color: rgb(217, 255, 0);"></div></div>
+                    <h2 style="margin-top: 2%;"><i>70%</i></h2>
+                </div><br>
+                <div class="skill">
+                    <h2 class="skill-text">SQL</h2>
+                    <div class="empty-bar"><div class="fullbar" style="width: 80%;background-color: rgb(0, 255, 0);"></div></div>
+                    <h2 style="margin-top: 2%;"><i>80%</i></h2>
+                </div>
+            </div>
+        
+        <li id="OS">Operating Systems and basics(Sockets, scripting etc)</li>
+        <div id="OS-div" style="display: none;">
+            <div class="skill">
+                <h2 class="skill-text">Python</h2>
+                <div class="empty-bar"><div class="fullbar" style="width: 100%;background-color: rgb(0, 255, 0);"></div></div>
+                <h2 style="margin-top: 2%;"><i>100%</i></h2>
+            </div><br>
+            <div class="skill">
+                <h2 class="skill-text">BASH</h2>
+                <div class="empty-bar"><div class="fullbar" style="width: 70%;background-color: rgb(255, 255, 0);"></div></div>
+                <h2 style="margin-top: 2%;"><i>70%</i></h2>
+            </div><br>
+            
+            <div class="skill">
+                <h2 class="skill-text">C/C++</h2>
+                <div class="empty-bar"><div class="fullbar" style="width: 60%;background-color: yellow;"></div></div>
+                <h2 style="margin-top: 2%;"><i>60%</i></h2>
+            </div><br>
         </div>
-        <br>
-        <div class="skill">
-            <h2 class="skill-text">JavaScript</h2>
-            <div class="empty-bar"><div class="fullbar" style="width: 80%;background-color: rgb(0, 255, 0);"></div></div>
-            <h2 style="margin-top: 2%;"><i>80%</i></h2>
+        
+        <li id="ML">Machine Learning</li>
+        <div id="ML-div" style="display: none">
+            <div class="skill">
+                <h2 class="skill-text">Python</h2>
+                <div class="empty-bar"><div class="fullbar" style="width: 100%;background-color: rgb(0, 255, 0);"></div></div>
+                <h2 style="margin-top: 2%;"><i>100%</i></h2>
+            </div><br>
+            <div class="skill">
+                <h2 class="skill-text">OpenCV-Python</h2>
+                <div class="empty-bar"><div class="fullbar" style="width: 80%;background-color: rgb(0, 255, 0);"></div></div>
+                <h2 style="margin-top: 2%;"><i>80%</i></h2>
+            </div>
         </div>
-        <br>
-        <div class="skill">
-            <h2 class="skill-text">Jquery</h2>
-            <div class="empty-bar"><div class="fullbar" style="width: 80%;background-color: rgb(0, 255, 0);"></div></div>
-            <h2 style="margin-top: 2%;"><i>80%</i></h2>
-        </div><br>
-        <div class="skill">
-            <h2 class="skill-text">AJAX</h2>
-            <div class="empty-bar"><div class="fullbar" style="width: 70%;background-color: rgb(217, 255, 0);"></div></div>
-            <h2 style="margin-top: 2%;"><i>70%</i></h2>
-        </div><br>
-        <div class="skill">
-            <h2 class="skill-text">C/C++</h2>
-            <div class="empty-bar"><div class="fullbar" style="width: 80%;background-color: rgb(0, 255, 0);"></div></div>
-            <h2 style="margin-top: 2%;"><i>80%</i></h2>
-        </div><br>
-        <div class="skill">
-            <h2 class="skill-text">SQL</h2>
-            <div class="empty-bar"><div class="fullbar" style="width: 80%;background-color: rgb(0, 255, 0);"></div></div>
-            <h2 style="margin-top: 2%;"><i>80%</i></h2>
+
+        <li id="DS">Data Science</li>
+        <div id="DS-div" style="display: none;">
+            <div class="skill">
+                <h2 class="skill-text">Pandas-Python</h2>
+                <div class="empty-bar"><div class="fullbar" style="width: 100%;background-color: rgb(0, 255, 0);"></div></div>
+                <h2 style="margin-top: 2%;"><i>100%</i></h2>
+            </div><br>
+            <div class="skill">
+                <h2 class="skill-text">NumPy</h2>
+                <div class="empty-bar"><div class="fullbar" style="width: 100%;background-color: rgb(0, 255, 0);"></div></div>
+                <h2 style="margin-top: 2%;"><i>100%</i></h2>
+            </div><br>
         </div>
-        <br>
-        <div class="skill">
-            <h2 class="skill-text">Kotlin</h2>
-            <div class="empty-bar"><div class="fullbar" style="width: 90%;background-color: rgb(0, 255, 0);"></div></div>
-            <h2 style="margin-top: 2%;"><i>90%</i></h2>
-        </div><br>
-        <div class="skill">
-            <h2 class="skill-text">OpenCV</h2>
-            <div class="empty-bar"><div class="fullbar" style="width: 80%;background-color: rgb(0, 255, 0);"></div></div>
-            <h2 style="margin-top: 2%;"><i>80%</i></h2>
+
+        <li id="others">Others</li>
+        <div id="others-div" style="display: none;">
+            <div class="skill">
+                <h2 class="skill-text">Kotlin</h2>
+                <div class="empty-bar"><div class="fullbar" style="width: 90%;background-color: rgb(0, 255, 0);"></div></div>
+                <h2 style="margin-top: 2%;"><i>90%</i></h2>
+            </div><br>
         </div>
     </div>
     
+
     <div id="project-info">
         <table>
             <tr>
@@ -127,6 +174,7 @@
             </tr>
             </table>
     </div>
+
 
     <div id="contact-info">
         <h3 style="margin-top: 0;color: white;position: absolute;top: 5%">Contact</h3>
