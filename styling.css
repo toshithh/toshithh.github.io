@@ -100,6 +100,7 @@ h1{
     position: fixed;
     z-index: 2;
     line-height: 1.5;
+    font-size: medium;
     width: 45%;
     height:70%;
     top: 10%;
@@ -112,6 +113,7 @@ h1{
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    scroll-behavior: smooth;
     color: rgb(217, 247, 255);
 }
 #about-info::-webkit-scrollbar {
@@ -193,7 +195,8 @@ a{
     width:80%;
     padding: 2%;
     background-color: rgba(255, 255, 255, 0.5);
-    height: 30%;
+    min-height: 20%;
+    max-height: 30%;
     border-radius: 15px;
     color:rgb(24, 24, 24);
 }
@@ -222,4 +225,7 @@ li{
 }
 ul{
     width: 100%;
+}
+.webdiv{
+    height: 100%;
 }

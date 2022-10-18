@@ -6,6 +6,9 @@ function replaceClass(id, oldClass, newClass) {
     }
     elem.addClass(newClass);
 }
+function scroll(id){
+    document.getElementById(id).scrollIntoView();
+}
 
 function load_disp(id, w){
     idh = "#"+id;
@@ -82,6 +85,7 @@ $(document).ready(function(){
         replaceClass("contact", "current", "top-button");
         replaceClass("about", "top-button", "current");
         an2abt();
+        setTimeout(scroll, def_time, "scr-here");
 //        leftOut("title");
     });
     $("#home").click(function(){
@@ -106,6 +110,7 @@ $(document).ready(function(){
         an2contact();
     })
     //
+    
     $("#webdev").click(function(){
         if($("#webdiv").css('display')=='none'){ 
             load_disp("wd-py", "100%");
@@ -117,7 +122,9 @@ $(document).ready(function(){
             load_disp("wd-ajax","70%");
             load_disp("wd-sql", "95%");
         }
-        $("#webdiv").slideToggle(500);
+        $("#webdiv").slideToggle(1000);
+        
+        scroll("webdev");
     })
     $("#OS").click(function(){
         if($("#OS-div").css('display')=='none'){
@@ -125,6 +132,7 @@ $(document).ready(function(){
             load_disp("os-bash", "70%");
         }
         $("#OS-div").slideToggle(500);
+        scroll("OS");
     })
     $("#ML").click(function(){
         if($("#ML-div").css('display')=='none'){
@@ -132,6 +140,7 @@ $(document).ready(function(){
             load_disp("ml-cv", "80%");
         }
         $("#ML-div").slideToggle(500);
+        scroll("ML");
     })
     $("#DS").click(function(){
         if($("#DS-div").css('display')=='none'){
@@ -140,6 +149,7 @@ $(document).ready(function(){
             load_disp("ds-sql", "95%");
         }
         $("#DS-div").slideToggle(500);
+        scroll("DS");
     })
     $("#others").click(function(){
         if($("#others-div").css('display')=='none'){
@@ -147,5 +157,6 @@ $(document).ready(function(){
             load_disp("ot-c", "60%");
         }
         $("#others-div").slideToggle(500);
+        scroll("others");
     })
 })

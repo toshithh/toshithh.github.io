@@ -112,6 +112,7 @@ h1{
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    scroll-behavior: smooth;
     color: rgb(217, 247, 255);
 }
 #about-info::-webkit-scrollbar {
@@ -216,7 +217,7 @@ a{
 }
 
 li{
-    width: 80%;
+    width: 60%;
     border-bottom: 1px solid white;
     padding: 1.5%;
     margin: 4%;
