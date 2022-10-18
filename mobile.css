@@ -189,7 +189,6 @@ a{
 
 .skill{
     text-align: center;
-    margin-left: 10%;
     width:80%;
     padding: 2%;
     background-color: rgba(255, 255, 255, 0.5);
@@ -213,4 +212,14 @@ a{
 }
 .skill-text{
     margin-top: 2%;
+}
+
+li{
+    width: 80%;
+    border-bottom: 1px solid white;
+    padding: 1%;
+    margin: 2%;
+}
+ul{
+    width: 100%;
 }
