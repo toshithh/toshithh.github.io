@@ -116,6 +116,7 @@ h1{
 }
 #about-info::-webkit-scrollbar {
     display: none;
+    font-size: medium;
 }
 
 .child{
@@ -217,8 +218,8 @@ a{
 li{
     width: 80%;
     border-bottom: 1px solid white;
-    padding: 1%;
-    margin: 2%;
+    padding: 1.5%;
+    margin: 4%;
 }
 ul{
     width: 100%;
