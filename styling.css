@@ -13,7 +13,7 @@ body{
     outline: none;
     margin: none;
     width: 100%;
-    height: 100;
+    height: 100%;
     object-fit: cover;
     z-index:0;
     opacity: 0.3;
@@ -163,10 +163,18 @@ tr{
     background-color: rgba(0,0,0,0.5);
     min-width: 26%;
     max-width: 100%;
+    width: 32%;
     border-radius: 10px;
     padding: 1%;
     top: 94%;
     left: 35.5%;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+#contact-info::-webkit-scrollbar {
+    display: none;
 }
 
 #contact-top{
