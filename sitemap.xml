@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- root page -->
+  <url>
+    <loc>https://toshithh.github.io/</loc>
+    <lastmod>2025-09-25T18:58:11+00:00</lastmod>
+  </url>
+
+  <!-- dynamic pages with ?md= parameters -->
+  <url>
+    <loc>https://toshithh.github.io/?md=htb</loc>
+    <lastmod>2025-09-25T18:58:11+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://toshithh.github.io/?md=htb-environment</loc>
+    <lastmod>2025-09-25T18:58:11+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://toshithh.github.io/?md=htb-rustykey</loc>
+    <lastmod>2025-09-25T18:58:11+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://toshithh.github.io/?md=htb-fluffy</loc>
+    <lastmod>2025-09-25T18:58:11+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://toshithh.github.io/?md=htb-whiterabbit</loc>
+    <lastmod>2025-09-25T18:58:11+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://toshithh.github.io/?md=p2f</loc>
+    <lastmod>2025-09-25T18:58:11+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://toshithh.github.io/?md=tcorpion</loc>
+    <lastmod>2025-09-25T18:58:11+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://toshithh.github.io/?md=anykboard</loc>
+    <lastmod>2025-09-25T18:58:11+00:00</lastmod>
+  </url>
+
+</urlset>
